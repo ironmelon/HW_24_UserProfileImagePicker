@@ -11,22 +11,21 @@ import UIKit
 class ImagePickerViewController: UIViewController {
 
     @IBOutlet private weak var photoView: UIImageView!
-    private var imagePicker = UIImagePickerController()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         updateDefaultImage()
-        imagePicker.delegate = self
     }
 
     private func updateDefaultImage() {
         photoView.image = #imageLiteral(resourceName: "defaultGallery")
     }
 
-    //MARK: - Actions
+    // MARK: - Actions
     @IBAction private func pickedFromGallery(_ sender: Any) {
-        imagePicker.delegate = self;
-        imagePicker.allowsEditing = true;
+        let imagePicker = UIImagePickerController()
+        imagePicker.delegate = self
+        imagePicker.allowsEditing = true
         imagePicker.sourceType = .photoLibrary
         present(imagePicker, animated: true, completion: nil)
     }
@@ -39,7 +38,7 @@ class ImagePickerViewController: UIViewController {
 // MARK: - Extensions
 extension ImagePickerViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
-    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String: Any]) {
         photoView.image = info[UIImagePickerControllerEditedImage] as? UIImage
         dismiss(animated: true, completion: nil)
     }

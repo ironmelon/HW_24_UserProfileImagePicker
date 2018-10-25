@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3FEC8CE16F63A6FEC378C2CB /* Pods_HW_24_UserProfileImagePicker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDA37B58E3281F84E67758D9 /* Pods_HW_24_UserProfileImagePicker.framework */; };
 		E3396C4021793686000C60E2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3396C3F21793686000C60E2 /* AppDelegate.swift */; };
 		E3396C4521793686000C60E2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3396C4321793686000C60E2 /* Main.storyboard */; };
 		E3396C47217936A3000C60E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3396C46217936A3000C60E2 /* Assets.xcassets */; };
@@ -15,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		32BBD1DF6602B0C47088AB22 /* Pods-HW_24_UserProfileImagePicker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HW_24_UserProfileImagePicker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HW_24_UserProfileImagePicker/Pods-HW_24_UserProfileImagePicker.debug.xcconfig"; sourceTree = "<group>"; };
+		C084FA79B8F763F1253C5B44 /* Pods-HW_24_UserProfileImagePicker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HW_24_UserProfileImagePicker.release.xcconfig"; path = "Pods/Target Support Files/Pods-HW_24_UserProfileImagePicker/Pods-HW_24_UserProfileImagePicker.release.xcconfig"; sourceTree = "<group>"; };
 		E3396C3C21793686000C60E2 /* HW_24_UserProfileImagePicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HW_24_UserProfileImagePicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3396C3F21793686000C60E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E3396C4421793686000C60E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		E3396C49217936A3000C60E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E3396C4B217936A3000C60E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E3396C512179418A000C60E2 /* ImagePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerViewController.swift; sourceTree = "<group>"; };
+		EDA37B58E3281F84E67758D9 /* Pods_HW_24_UserProfileImagePicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HW_24_UserProfileImagePicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FEC8CE16F63A6FEC378C2CB /* Pods_HW_24_UserProfileImagePicker.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4EAAE0E6AC97707137F45C94 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EDA37B58E3281F84E67758D9 /* Pods_HW_24_UserProfileImagePicker.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E3396C3321793686000C60E2 = {
 			isa = PBXGroup;
 			children = (
 				E3396C3E21793686000C60E2 /* HW_24_UserProfileImagePicker */,
 				E3396C3D21793686000C60E2 /* Products */,
+				F24534F6776F7E194D18A05E /* Pods */,
+				4EAAE0E6AC97707137F45C94 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +79,15 @@
 			path = HW_24_UserProfileImagePicker;
 			sourceTree = "<group>";
 		};
+		F24534F6776F7E194D18A05E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				32BBD1DF6602B0C47088AB22 /* Pods-HW_24_UserProfileImagePicker.debug.xcconfig */,
+				C084FA79B8F763F1253C5B44 /* Pods-HW_24_UserProfileImagePicker.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E3396C4E217936A3000C60E2 /* Build configuration list for PBXNativeTarget "HW_24_UserProfileImagePicker" */;
 			buildPhases = (
+				40457364059D5ABB1055773F /* [CP] Check Pods Manifest.lock */,
 				E3396C3821793686000C60E2 /* Sources */,
 				E3396C3921793686000C60E2 /* Frameworks */,
 				E3396C3A21793686000C60E2 /* Resources */,
+				E3529462218276AB003BCF2D /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -129,6 +155,40 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		40457364059D5ABB1055773F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HW_24_UserProfileImagePicker-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E3529462218276AB003BCF2D /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "${PODS_ROOT}/SwiftLint/swiftlint";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E3396C3821793686000C60E2 /* Sources */ = {
@@ -278,6 +338,7 @@
 		};
 		E3396C4F217936A3000C60E2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 32BBD1DF6602B0C47088AB22 /* Pods-HW_24_UserProfileImagePicker.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -296,6 +357,7 @@
 		};
 		E3396C50217936A3000C60E2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C084FA79B8F763F1253C5B44 /* Pods-HW_24_UserProfileImagePicker.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

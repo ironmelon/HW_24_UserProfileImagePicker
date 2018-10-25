@@ -1,0 +1,6 @@
+framework module Pods_HW_24_UserProfileImagePicker {
+  umbrella header "Pods-HW_24_UserProfileImagePicker-umbrella.h"
+
+  export *
+  module * { export * }
+}
